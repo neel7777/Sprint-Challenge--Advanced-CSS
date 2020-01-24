@@ -1,1 +1,24 @@
 // Mixins Here
+.flexingrow(){
+    display: flex;
+    
+}
+.flexingcolumn(){
+    display: flex;
+    flex-direction: column;
+    
+}
+.buttonmixin(@bg, @fc){
+    width: 35%;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: @bg;
+    color: @fc;
+}
+
+.hoverstuff(@bg2, @fontc){
+    background-color: @bg2;
+    color: @fontc;
+}
