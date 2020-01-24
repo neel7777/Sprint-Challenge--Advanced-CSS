@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    Adaptive is less flexible than responsive. A responsive website functions at any possible size while adaptive has pre-determined settings for certain layouts (mobile/tablet etc). Responsive is obviously more difficult to implement but it is much faster.
 2. Describe what it means to be mobile first vs desktop first.
+Mobile first means the initial layout is for a mobile screen(500px). 
 
-3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+    To design from mobile to desktop, you would need to assign media queries starting with mix-width: 500px and move to tablet then desktop. Desktop first is the opposite, initial layout is for desktop(800px), meaning our media queries would start from max-width: 800px and scale down. 
+
+3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units? 
+
+    This pretty much simplifies the math when assigning rem units. By setting the font-size to 62.5%, this makes it so 1rem = 10px, making it easier for us to determine what font size we want. 
 
 4. How would you describe preprocessing to someone new to CSS?
 
+    Preprocessing is simply a middleman in which we use a more efficient syntax to write our code which is compiled and then outputted. 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    I really like the nesting within elements. It makes alot of sense to write our code for an element within its parent. Much easier to follow and understand. The conversions from mobile to desktop etc can be challenging to look exactly like the model. I think this will become easier with practice.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
